@@ -23,7 +23,13 @@ if client_id and client_secret and user_agent:
 
     st.subheader("📥 Scrape Settings")
     subreddit_name = st.text_input("Subreddit Name (e.g., technology)", value="technology")
-    limit = st.slider("Number of posts", 1, 100, 10)
+    download_all = st.checkbox("Download all available posts (up to 1000)", value=True)
+
+    if not download_all:
+        limit = st.slider("Number of posts", 1, 1000, 100)
+    else:
+        limit = 1000
+
     sort_option = st.selectbox("Sort by", ["hot", "new", "top"])
     fetch_button = st.button("Fetch Posts")
 
