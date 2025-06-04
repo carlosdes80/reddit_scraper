@@ -16,6 +16,6 @@ A simple Streamlit app that uses Reddit's API to fetch and download posts from a
 
 ## ☁️ Deploy on Streamlit Cloud
 
-1. Push this repo to GitHub
+1. Push this repo to GitHub (private recommended)
 2. Go to [Streamlit Cloud](https://streamlit.io/cloud)
 3. Connect your GitHub repo and deploy it!
